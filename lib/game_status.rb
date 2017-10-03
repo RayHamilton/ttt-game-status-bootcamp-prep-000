@@ -41,7 +41,7 @@ end
 
 def winner(board)
   player = won?(board)
-  if player = false
+  if player == false
     return nil
   else board[player[0]]
   end

@@ -40,9 +40,9 @@ def over?(board)
 end
 
 def winner(board)
-  player = won?(board)
-  if player == false
+  winning_player = won?(board)
+  if winning_player == false
     return nil
-  else board[player[0]]
+  else board[winning_player[0]] # simply access the first element of the winning combination
   end
 end
